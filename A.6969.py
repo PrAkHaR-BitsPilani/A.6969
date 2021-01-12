@@ -58,12 +58,14 @@ def toggleFs(*args):
 def draw(*args):
     root.unbind("<f>")
     global x
+    #start changing
     t.circle(5*x)
     t.circle(-5*x)
     t.left(90)
     t.circle(5*x)
     t.circle(-5*x)
     t.right(90)
+    #end changing
     x = x+1
     root.bind("<f>" , draw)
 
